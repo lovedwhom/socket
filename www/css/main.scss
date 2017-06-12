@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height:100%;
+  width: 100%;
+}
+#wrapper{
+  width: 500px;
+  height:800px;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: pink;
+
+  header{
+    width: 100%;
+    height: 50px;
+    h3{
+      span{
+        font-size: 20px;
+      }
+    }
+  }
+
+  #content{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    div{
+      width: auto;
+      max-width: 90%;
+      //border:1px solid black;
+      //border-radius: 5px;
+      h5{
+        display: inline-block;
+        //width: auto;
+      }
+      p{
+        //display: inline-block;
+        width: auto;
+        border:1px solid black;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  #util{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    input{
+      width:100px;
+      height: 30px;
+
+    }
+    .imageLable{
+        position: relative;
+        #sendImage{
+          position: absolute;
+          width: 52px;
+          left: 0;
+          opacity: 0;
+          overflow: hidden;
+        }
+        }
+    }
+  footer{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    #chatMsg{
+      width: 80%;
+      height: 100%;
+      background-color: blanchedalmond;
+      float: left;
+    }
+    input{
+      width: 20%;
+      height: 100%;
+    }
+  }
+}
+
+
+#login_wrapper{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top: 0;
+  background-color: grey;
+  #nickWrapper{
+    display: none;
+  }
+}
+
