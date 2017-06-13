@@ -18,8 +18,21 @@ io.sockets.on('connection',function (socket) {
             socket.userIndex = users.length;
             socket.nickname = nickname;
             users.push(nickname);
-            socket.emit('loginSuccess');
+            socket.emit('loginSuccess',nickname);
+            //所有人都能收到信息
             io.sockets.emit('system', nickname, users.length, 'login');
         }
     });
+    socket.on('disconnect', function() {
+        if (socket.nickname != null) {
+            //users.splice(socket.userIndex, 1);
+            users.splice(users.indexOf(socket.nickname), 1);
+            socket.broadcast.emit('system', socket.nickname, users.length, 'logout');
+        }
+    });
+
+    socket.on('sendChatMsg',function(msg){
+        //自己接收不到消息
+        socket.broadcast.emit('newMsg',socket.nickname,msg)
+    })
 });

@@ -13,14 +13,13 @@
 <body>
     <div id="wrapper">
         <header>
-            <h3>Hello : <span id="user_name">hebin</span></h3>
-            <p>在线人数 : <span id="online_num">1</span></p>
+            <h3>Hello : <span id="user_name"></span></h3>
+            <p>在线人数 : <span id="online_num"></span></p>
         </header>
         <div id="content">
             <div>
                     <h5><span>me</span> <span>(20:00:00)</span> :</h5>
                     <p>haha</p>
-
             </div>
 
         </div>
@@ -28,16 +27,16 @@
             <input type="color" id="select_color">
             <input type="button" value="emoji" id="select__emoji" title="emoji">
             <label for="sendImage" class="imageLable">
-                <input type="button" value="image"  />
+                <input type="button" value="image" />
                 <input id="sendImage" type="file" value="image"/>
             </label>
             <input id="clearBtn" type="button" value="clear" title="clear screen" />
         </div>
         <footer>
-            <div id="chatMsg">
+            <div id="chatMsg" contenteditable >
 
             </div>
-            <input type="button" value="发送">
+            <input type="button" value="发送" id="sendMsg">
         </footer>
     </div>
     <div id="login_wrapper">
