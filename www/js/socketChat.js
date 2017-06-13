@@ -47,7 +47,9 @@ sockeChat.prototype = {
                 promptJS('聊天信息不能为空')
             }
 
-        },false)
+        },false);
+
+        this._initEmoji(70);
     },
     __displayUserLoginMsg:function (user,msg) {
         const  date = new Date().toTimeString().substring(0,8);
@@ -61,6 +63,17 @@ sockeChat.prototype = {
             msgToDisplay .innerHTML = msg;
             container.appendChild(msgToDisplay);
 
+    },
+    _initEmoji:function (_num) {
+        const emojiContainer = document.getElementById('emojiWrapper'),
+            docFragment = document.createDocumentFragment();
+        for (var i = 1; i <_num; i++) {
+            var emojiItem = document.createElement('img');
+            emojiItem.src = '../resource/emoji/' + i + '.gif';
+            emojiItem.title = i;
+            docFragment.appendChild(emojiItem);
+        }
+        emojiContainer.appendChild(docFragment);
     }
 
 };
