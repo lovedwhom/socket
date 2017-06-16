@@ -34,5 +34,8 @@ io.sockets.on('connection',function (socket) {
     socket.on('sendChatMsg',function(msg){
         //自己接收不到消息
         socket.broadcast.emit('newMsg',socket.nickname,msg)
+    });
+    socket.on('img',function (imgData) {
+        socket.broadcast.emit('newImg', socket.nickname, imgData);
     })
 });

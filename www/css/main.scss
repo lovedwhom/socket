@@ -27,6 +27,7 @@ html,body{
     width: 100%;
     height: 400px;
     background-color: #fff;
+    overflow: auto;
     div{
       width: auto;
       max-width: 90%;
@@ -57,10 +58,17 @@ html,body{
     }
     .imageLable{
         position: relative;
+        width: 100px;
+        height: 30px;
+        /* background-color: red; */
+        display: inline-block;
         #sendImage{
+          width: 100px;
+          height:30px;
           position: absolute;
-          width: 52px;
+          //width: 52px;
           left: 0;
+          top:0;
           opacity: 0;
           overflow: hidden;
         }
@@ -73,7 +81,8 @@ html,body{
           position: absolute;
           bottom: 50px;
           left: 0;
-        background-color: grey;
+          background-color: grey;
+          display: none;
         img{
           margin: 2px;
           padding: 2px;
