@@ -93,7 +93,7 @@ sockeChat.prototype = {
                 };
                 reader.readAsDataURL(file);
             }
-        },false)
+        },false);
         document.getElementById('clearBtn').addEventListener('click', function() {
             document.getElementById('content').innerHTML = '';
         }, false);
