@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+#wrapper {
+  width: 500px;
+  height: 100%;
+  /*padding: 5px;*/
+  margin: 0 auto;
+  background-color: pink; }
+#wrapper header {
+  width: 100%;
+  height: 50px; }
+#wrapper header h3 span {
+  font-size: 20px; }
+#wrapper #content {
+  width: 100%;
+  height: 390px;
+  /* background-color: #fff;*/
+  overflow: auto;
+  background-color: deepskyblue; }
+#wrapper #content div {
+  width: auto;
+  max-width: 90%; }
+#wrapper #content div h5 {
+  display: inline-block; }
+#wrapper #content div p {
+  width: auto;
+  border: 1px solid black;
+  border-radius: 5px; }
+#wrapper #util {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: gray; }
+#wrapper #util input {
+  width: 100px;
+  height: 30px; }
+#wrapper #util .imageLable {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  /* background-color: red; */
+  display: inline-block; }
+#wrapper #util .imageLable #sendImage {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  overflow: hidden; }
+#wrapper #util #emojiWrapper {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  background-color: grey;
+  display: none; }
+#wrapper #util #emojiWrapper img {
+  margin: 2px;
+  padding: 2px;
+  width: 25px;
+  height: 25px; }
+#wrapper #util #emojiWrapper img:hover {
+  background-color: blue; }
+#wrapper footer {
+  width: 100%;
+  height: 150px;
+  background-color: #fff; }
+#wrapper footer #chatMsg {
+  width: 80%;
+  height: 100%;
+  background-color: blanchedalmond;
+  float: left; }
+#wrapper footer input {
+  width: 20%;
+  height: 100%; }
+
+#login_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: grey; }
+#login_wrapper #center {
+  width: 300px;
+  height: 50px;
+  border: 4px solid red;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+#login_wrapper #center #nickWrapper {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
